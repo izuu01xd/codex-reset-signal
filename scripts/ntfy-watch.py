@@ -8,8 +8,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 
-FEED = "https://reset.onlyax.com/feed.xml"
-STATE_PATH = ".ntfy-watcher-state.json"
+FEED = "https://raw.githubusercontent.com/AllenXiao95/codex-reset-signal/monitor-state/feed.xml"STATE_PATH = ".ntfy-watcher-state.json"
 
 
 def request(url, data=None, headers=None, method=None):
