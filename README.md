@@ -2,11 +2,11 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-[![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
-[![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
+[![CI](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/ci.yml)
+[![Monitor](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/monitor.yml)
 
-**Live dashboard:** [https://reset.onlyax.com/](https://reset.onlyax.com/)  
-**RSS feed:** [https://reset.onlyax.com/feed.xml](https://reset.onlyax.com/feed.xml)
+**Live dashboard:** [GitHub Pages](https://izuu01xd.github.io/codex-reset-signal/)  
+**RSS feed:** [Independent runtime feed](https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml)
 
 Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), detect reset / reset-bank signals, extract event times, and publish a timezone-aware dashboard plus optional notifications.
 
@@ -65,16 +65,16 @@ Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
 
-Use a dedicated Custom Domain for the dashboard. The maintainer deployment is:
+Use your own Custom Domain for an optional Cloudflare deployment. This fork's static dashboard is:
 
 ```text
-https://reset.onlyax.com/
+https://izuu01xd.github.io/codex-reset-signal/
 ```
 
-The same deployment exposes the RSS feed at:
+The independent RSS feed is available without Cloudflare at:
 
 ```text
-https://reset.onlyax.com/feed.xml
+https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml
 ```
 
 `RESET_STATUS_URL` is optional; the canonical deployment already defaults to this repository's `monitor-state/status.json`. The RSS route renders from the same public status source, so forks can point the dashboard and feed at their own runtime branch with the same setting.

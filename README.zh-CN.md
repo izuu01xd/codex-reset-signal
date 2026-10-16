@@ -2,11 +2,11 @@
 
 [English](README.md) | **简体中文**
 
-[![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
-[![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
+[![CI](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/ci.yml)
+[![Monitor](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/izuu01xd/codex-reset-signal/actions/workflows/monitor.yml)
 
-**在线 Dashboard：** [https://reset.onlyax.com/](https://reset.onlyax.com/)  
-**RSS Feed：** [https://reset.onlyax.com/feed.xml](https://reset.onlyax.com/feed.xml)
+**在线 Dashboard：** [GitHub Pages](https://izuu01xd.github.io/codex-reset-signal/)  
+**RSS Feed：** [独立运行时 Feed](https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml)
 
 监控 [Tibo（@thsottiaux）](https://x.com/thsottiaux) 的公开 X 帖子，识别 reset / reset bank 信号、解析事件时间，并提供可切换时区的 Dashboard 和可选通知。
 
@@ -65,16 +65,16 @@ Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
 
-Dashboard 建议绑定独立 Custom Domain。当前维护者部署：
+Cloudflare Dashboard 可绑定自己的 Custom Domain。本 fork 的静态 Dashboard：
 
 ```text
-https://reset.onlyax.com/
+https://izuu01xd.github.io/codex-reset-signal/
 ```
 
-同一部署会同时暴露：
+独立 RSS 无需部署 Cloudflare 即可读取：
 
 ```text
-https://reset.onlyax.com/feed.xml
+https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml
 ```
 
 `RESET_STATUS_URL` 是可选项；当前默认已经读取本仓库 `monitor-state/status.json`。RSS 路由使用同一个公共状态源，因此第三方 fork 只需要把 `RESET_STATUS_URL` 指向自己的运行时分支，Dashboard 与 Feed 会一起切换。
