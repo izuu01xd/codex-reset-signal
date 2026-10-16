@@ -20,6 +20,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p 'ntfy_watch_test.py'
+      - run: python -m unittest discover -s ntfy-watcher/tests -p 'ntfy_watch_test.py'
+      - run: bash -n scripts/ensure-monitor-state.sh
       - run: npm run typecheck
       - run: npm run pages:validate
       - name: Keep Cloudflare template zero-config
