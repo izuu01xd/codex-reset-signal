@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2110971985417441512",
-  "lastCheckedAt": "2026-10-16T06:19:07.659Z",
-  "lastSuccessAt": "2026-10-16T06:19:07.659Z",
-  "lastRunStatus": "bootstrapped",
+  "lastCheckedAt": "2026-10-16T10:43:46.145Z",
+  "lastSuccessAt": "2026-10-16T10:43:46.145Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 19,
   "matches": [
     {
       "version": "26278fd8a9f9deb053233cc5114c40ba3cdd311bd6aa75bc2688d88afeb12443",
       "id": "2110595484180214059",
-      "canonicalId": "2110595484180214059",
       "text": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
       "createdAt": "2026-10-15T04:55:51.000Z",
       "url": "https://x.com/thsottiaux/status/2110595484180214059",
