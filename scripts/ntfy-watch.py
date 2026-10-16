@@ -8,7 +8,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 
-FEED = "https://raw.githubusercontent.com/AllenXiao95/codex-reset-signal/monitor-state/feed.xml"
+FEED = "https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml"
 STATE_PATH = ".ntfy-watcher-state.json"
 
 def request(url, data=None, headers=None, method=None):
@@ -121,6 +121,7 @@ def main():
         print("Test notification sent; state unchanged.")
         return
     events = parse_feed(request(FEED))
+    print("Read " + str(len(events)) + " reset GUIDs from repository feed.")
     watch(events, Store(), lambda event: publish(event, topic))
 
 
