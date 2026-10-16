@@ -1,7 +1,8 @@
 # ntfy Codex reset watcher
 
 Independent of the upstream monitor, CI, and Pages workflows. Polls
-https://reset.onlyax.com/feed.xml every five minutes at minutes 3, 8, ..., 58.
+https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml
+every five minutes at minutes 3, 8, ..., 58.
 Only category `reset` is delivered; `bank_credit` is excluded. This watches public
 announcements, not your individual account quota or reset timer.
 
