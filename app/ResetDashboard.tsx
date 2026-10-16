@@ -7,7 +7,7 @@ import { isCompletedReset, resetHeroState } from "@/src/dashboard-state";
 import styles from "./dashboard.module.css";
 
 const RAW_STATUS_URL =
-  "https://raw.githubusercontent.com/AllenXiao95/codex-reset-signal/monitor-state/status.json";
+  "https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/status.json";
 const STORAGE_KEY = "reset-signal-timezone";
 const STATUS_REFRESH_INTERVAL_MS = 300_000;
 
@@ -297,7 +297,7 @@ export default function ResetDashboard() {
         <nav className={styles.nav}>
           <a href="#recent">Recent signals</a>
           <a
-            href="https://github.com/AllenXiao95/codex-reset-signal"
+            href="https://github.com/izuu01xd/codex-reset-signal"
             target="_blank"
             rel="noreferrer"
           >
