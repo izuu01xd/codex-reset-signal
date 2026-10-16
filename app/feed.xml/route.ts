@@ -2,7 +2,7 @@ import { renderRssFeed } from "@/src/feed";
 import type { PublicStatus } from "@/src/types";
 
 const DEFAULT_STATUS_URL =
-  "https://raw.githubusercontent.com/AllenXiao95/codex-reset-signal/monitor-state/status.json";
+  "https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/status.json";
 
 export async function GET() {
   const configured = process.env.RESET_STATUS_URL?.trim() || DEFAULT_STATUS_URL;
