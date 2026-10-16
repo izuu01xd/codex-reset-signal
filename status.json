@@ -1,15 +1,20 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T06:19:03.131Z",
+  "updatedAt": "2026-10-16T06:19:07.668Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": null,
-    "lastSuccessAt": null,
-    "lastRunStatus": "waiting-for-first-run"
+    "lastCheckedAt": "2026-10-16T06:19:07.659Z",
+    "lastSuccessAt": "2026-10-16T06:19:07.659Z",
+    "lastRunStatus": "bootstrapped"
   },
-  "latestObservedPost": null,
+  "latestObservedPost": {
+    "id": "2110971985417441512",
+    "text": "Either we are out of ideas or we are cooking. Time will tell",
+    "url": "https://x.com/thsottiaux/status/2110971985417441512",
+    "postCreatedAt": "2026-10-16T05:51:55.000Z"
+  },
   "latest": {
     "reset": null,
     "bankCredit": {
@@ -39,6 +44,42 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "26278fd8a9f9deb053233cc5114c40ba3cdd311bd6aa75bc2688d88afeb12443",
+      "id": "2110595484180214059",
+      "text": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
+      "url": "https://x.com/thsottiaux/status/2110595484180214059",
+      "postCreatedAt": "2026-10-15T04:55:51.000Z",
+      "detectedAt": "2026-10-16T06:19:07.659Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "The reports of my reset button being lost are greatly exaggerated",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "The reports of my reset button being lost are greatly exaggerated",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        },
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Day 10/ Reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Day 10/ Reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "history:2096035437299237298",
       "id": "2096035437299237298",
