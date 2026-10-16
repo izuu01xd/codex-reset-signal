@@ -21,6 +21,9 @@ class MemoryStore:
 
 
 class WatcherTests(unittest.TestCase):
+    def test_feed_belongs_to_this_repository(self):
+        self.assertEqual(watcher.FEED, "https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml")
+
     def test_baseline_then_only_new_and_no_replay(self):
         store = MemoryStore()
         delivered = []
