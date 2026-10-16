@@ -1,11 +1,19 @@
 # ntfy Codex reset watcher
 
-Independent of the upstream monitor, CI, and Pages workflows. Polls
-https://reset.onlyax.com/feed.xml every five minutes at minutes 3, 8, ..., 58.
+Polls this repository's independently generated feed at
+https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml
+every five minutes at minutes 3, 8, ..., 58.
 Only category `reset` is delivered; `bank_credit` is excluded. This watches public
 announcements, not your individual account quota or reset timer.
 
 ## Enable
+
+Run **Monitor X for reset** first. It initializes `monitor-state` if absent,
+then collects @thsottiaux via FxEmbed with keyword `reset` and writes its own
+`state.json`, `status.json`, and `feed.xml`. The branch contains runtime data
+only. Initialization never overwrites an existing branch; corrupt state still
+fails validation. The monitor's `contents: write` token creates and updates this
+branch. No upstream runtime feed or upstream credentials are used.
 
 1. Repository Settings > Secrets and variables > Actions > New repository secret:
    name `NTFY_TOPIC`, value your existing topic name only. Never commit the value.

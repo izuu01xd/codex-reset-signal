@@ -27,7 +27,7 @@ The workflow uses GitHub's official Pages actions and uploads only the `pages/` 
 For this repository, the default project-site URL is:
 
 ```text
-https://allenxiao95.github.io/codex-reset-signal/
+https://izuu01xd.github.io/codex-reset-signal/
 ```
 
 ## Runtime data

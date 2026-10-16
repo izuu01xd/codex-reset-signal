@@ -85,10 +85,10 @@ monitor-state/status.json
 
 `RESET_STATUS_URL` is only an override for that status source.
 
-For the canonical repository `AllenXiao95/codex-reset-signal`, the built-in default already points to:
+For this repository `izuu01xd/codex-reset-signal`, the built-in default already points to:
 
 ```text
-https://raw.githubusercontent.com/AllenXiao95/codex-reset-signal/monitor-state/status.json
+https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/status.json
 ```
 
 So the maintainer deployment normally does **not** need to set `RESET_STATUS_URL`.
@@ -189,7 +189,7 @@ GITHUB_REF=main
 The defaults are:
 
 ```text
-GITHUB_REPOSITORY=AllenXiao95/codex-reset-signal
+GITHUB_REPOSITORY=izuu01xd/codex-reset-signal
 GITHUB_WORKFLOW=monitor.yml
 GITHUB_REF=main
 ```
