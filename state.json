@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2111249810502353152",
-  "lastCheckedAt": "2026-10-17T04:41:43.458Z",
-  "lastSuccessAt": "2026-10-17T04:41:43.458Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 27,
+  "sinceId": "2111341888322314672",
+  "lastCheckedAt": "2026-10-17T08:50:06.439Z",
+  "lastSuccessAt": "2026-10-17T08:50:06.439Z",
+  "lastRunStatus": "checked-6-posts",
+  "postsScanned": 33,
   "matches": [
     {
       "version": "26278fd8a9f9deb053233cc5114c40ba3cdd311bd6aa75bc2688d88afeb12443",
@@ -74,14 +74,20 @@
     "2111245772645896573": "582f5f59af613a51a4823d9e8a3426a1fb936c34191ef10bcdb5ffbcaf5d1abe",
     "2111246098207813946": "97e39979c6f80ae33e79c33a2dee82e978e348a788c192779a35ef0181b3bcb4",
     "2111249534072529256": "9e9e2e739dde85b7186c93e33f5cc5bb14e297e69817fa0df2521ecad6769a32",
-    "2111249810502353152": "2423d4995cb71188ff2b06f1f0e3a097ec92cba7bd620b3284162ed31df3a7fb"
+    "2111249810502353152": "2423d4995cb71188ff2b06f1f0e3a097ec92cba7bd620b3284162ed31df3a7fb",
+    "2111323620471632217": "24802e6a2f67ba0bf1b55842e2f57995f55efff9ec8c7f026dda0a632779e248",
+    "2111336070248026489": "a59c70cf725d2c5946bce38e440813be8c5ff2a26b93a600559c2904e0d75329",
+    "2111337472349343856": "f52ebbfaae21f307ac2e0227ea2003f4f22c54df7b38cabbf6253eb0a43b5853",
+    "2111338115667509490": "616cb939eb104d1682317d5373b11ab56e88cc67a70fba52eee33cbfba0eaf3c",
+    "2111339932614861298": "82b1dae819e850b94dcea0128e148c52677f1aa0191579b83462bc0c38d889fb",
+    "2111341888322314672": "d2681eabf4574cce53ac494363055b5dc1f5c0877985cace0da168e8526acd73"
   },
   "latestObservedPost": {
-    "id": "2111249810502353152",
-    "canonicalId": "2111249810502353152",
-    "text": "Also we just added slides support yesterday, try it out. Currently available in Pro, Business and Enterprise while we learn from your feedback.",
-    "createdAt": "2026-10-17T00:15:54.000Z",
-    "url": "https://x.com/thsottiaux/status/2111249810502353152",
+    "id": "2111341888322314672",
+    "canonicalId": "2111341888322314672",
+    "text": "@steipete 💀",
+    "createdAt": "2026-10-17T06:21:47.000Z",
+    "url": "https://x.com/thsottiaux/status/2111341888322314672",
     "media": []
   },
   "eventParserVersion": 5
