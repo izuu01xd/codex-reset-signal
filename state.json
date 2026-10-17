@@ -3,16 +3,15 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2111495569806065883",
-  "lastCheckedAt": "2026-10-17T18:05:44.948Z",
-  "lastSuccessAt": "2026-10-17T18:05:44.948Z",
-  "lastRunStatus": "checked-7-posts",
-  "postsScanned": 40,
+  "sinceId": "2111523665817047359",
+  "lastCheckedAt": "2026-10-17T20:31:23.279Z",
+  "lastSuccessAt": "2026-10-17T20:31:23.279Z",
+  "lastRunStatus": "checked-4-posts",
+  "postsScanned": 44,
   "matches": [
     {
       "version": "39697103a29962d0c82d2cdfeaaf3f169356770f892850e6d9e558a2f17d57d7",
       "id": "2111492673890824348",
-      "canonicalId": "2111492673890824348",
       "text": "Day 13/ Le limit reset https://t.co/zXd2DIH5xf",
       "createdAt": "2026-10-17T16:20:57.000Z",
       "url": "https://x.com/thsottiaux/status/2111492673890824348",
@@ -40,10 +39,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-17T18:05:44.950Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-17T18:05:44.950Z"
+      ]
     },
     {
       "version": "26278fd8a9f9deb053233cc5114c40ba3cdd311bd6aa75bc2688d88afeb12443",
@@ -123,14 +122,18 @@
     "2111492738025959922": "5fe871f49ebf8b3dcc5f177868206d637165a25dd6b3a380669da68f0b84c554",
     "2111493076850229733": "be56a8690a86a95c9eb5f83ddd8a246c079828d4320ede5942fcc152779f9e9c",
     "2111495392559067199": "9ecb634bd92e9578282dbbc5b78614c3d46e757fc4e81b6e5a78f3821a0c3489",
-    "2111495569806065883": "e3af21cf8ad4f03c93abf616c2b18b90c37e2775b604dc61d5c50ea9e5ce5ebe"
+    "2111495569806065883": "e3af21cf8ad4f03c93abf616c2b18b90c37e2775b604dc61d5c50ea9e5ce5ebe",
+    "2111519953564368960": "7a901ede6bf23f3b34e824c4367989f5d6e9e3091e3aa0044dd91aa5b76d47e1",
+    "2111522308666077527": "8af3a5a77e4ea528b67b31a77a2d2516c81cbbeb74e9017eb5a2d9850729ad08",
+    "2111523462372372942": "73086ce52d13dd10922257a2d876e906765e756e5ded47ecc14726a0fd9252b1",
+    "2111523665817047359": "9031dd49c146b84a7852da204b66db81d7208655b84fe4fcfafdcdaa5063b76b"
   },
   "latestObservedPost": {
-    "id": "2111495569806065883",
-    "canonicalId": "2111495569806065883",
-    "text": "@ajambrosino @ah20im start a ghost in the machine tactical squad, we've got a degradation",
-    "createdAt": "2026-10-17T16:32:28.000Z",
-    "url": "https://x.com/thsottiaux/status/2111495569806065883",
+    "id": "2111523665817047359",
+    "canonicalId": "2111523665817047359",
+    "text": "@ajambrosino @petergyang @amorriscode 🍺👌",
+    "createdAt": "2026-10-17T18:24:06.000Z",
+    "url": "https://x.com/thsottiaux/status/2111523665817047359",
     "media": []
   },
   "eventParserVersion": 5
