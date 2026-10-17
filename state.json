@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2110971985417441512",
-  "lastCheckedAt": "2026-10-16T22:00:00.899Z",
-  "lastSuccessAt": "2026-10-16T22:00:00.899Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 19,
+  "sinceId": "2111249810502353152",
+  "lastCheckedAt": "2026-10-17T00:18:36.223Z",
+  "lastSuccessAt": "2026-10-17T00:18:36.223Z",
+  "lastRunStatus": "checked-8-posts",
+  "postsScanned": 27,
   "matches": [
     {
       "version": "26278fd8a9f9deb053233cc5114c40ba3cdd311bd6aa75bc2688d88afeb12443",
@@ -66,14 +66,22 @@
     "2110868151688912976": "d0f703759921ebb86fb9b42b879f0e424d9cafa69f4e9f3902432ab3c021a5be",
     "2110951220508819773": "426982ae1809c8441a67444bd1e377d7d360f7bef01ced722981265758966b2a",
     "2110951585983631505": "7548d7bae97822dd136be48ff9233498b82a757b3eafd8e0784bb3540589d8d2",
-    "2110971985417441512": "18f651de9935a3e009b2ed6a61e364b0691de4a400d87513ee3be7be30b8500c"
+    "2110971985417441512": "18f651de9935a3e009b2ed6a61e364b0691de4a400d87513ee3be7be30b8500c",
+    "2111244596131111253": "8ba50e859e93cdb74d3fe1ffa1efe553781dd7060ab036fe90d25230a9957eef",
+    "2111244957851984181": "eb4b5db2957782b7c384d8740c27df36e26728aaedcd69247a4f2a7e245bc91c",
+    "2111245052513259606": "b40dafe7e3f22faeeab5cbe758dbec14a035fb2df08be0a45a6a93d0ef2c086d",
+    "2111245443917385980": "fd5d531faa999a0404f669d71e2118bea98db1645575f464d0f9ae7ac19e71f5",
+    "2111245772645896573": "582f5f59af613a51a4823d9e8a3426a1fb936c34191ef10bcdb5ffbcaf5d1abe",
+    "2111246098207813946": "97e39979c6f80ae33e79c33a2dee82e978e348a788c192779a35ef0181b3bcb4",
+    "2111249534072529256": "9e9e2e739dde85b7186c93e33f5cc5bb14e297e69817fa0df2521ecad6769a32",
+    "2111249810502353152": "2423d4995cb71188ff2b06f1f0e3a097ec92cba7bd620b3284162ed31df3a7fb"
   },
   "latestObservedPost": {
-    "id": "2110971985417441512",
-    "canonicalId": "2110971985417441512",
-    "text": "Either we are out of ideas or we are cooking. Time will tell",
-    "createdAt": "2026-10-16T05:51:55.000Z",
-    "url": "https://x.com/thsottiaux/status/2110971985417441512",
+    "id": "2111249810502353152",
+    "canonicalId": "2111249810502353152",
+    "text": "Also we just added slides support yesterday, try it out. Currently available in Pro, Business and Enterprise while we learn from your feedback.",
+    "createdAt": "2026-10-17T00:15:54.000Z",
+    "url": "https://x.com/thsottiaux/status/2111249810502353152",
     "media": []
   },
   "eventParserVersion": 5
