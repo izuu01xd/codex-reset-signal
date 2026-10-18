@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2111849858374177222",
-  "lastCheckedAt": "2026-10-18T18:54:31.988Z",
-  "lastSuccessAt": "2026-10-18T18:54:31.988Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 49,
+  "sinceId": "2111918768733753664",
+  "lastCheckedAt": "2026-10-18T21:14:58.473Z",
+  "lastSuccessAt": "2026-10-18T21:14:58.473Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 51,
   "matches": [
+    {
+      "version": "f7a9422b6a050344dbc8758d9fc575a4cb52ebca200291e6ef9bbe222fe2119d",
+      "id": "2111918768733753664",
+      "canonicalId": "2111918768733753664",
+      "text": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
+      "createdAt": "2026-10-18T20:34:06.000Z",
+      "url": "https://x.com/thsottiaux/status/2111918768733753664",
+      "media": [],
+      "detectedAt": "2026-10-18T21:14:58.473Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "People have escaped the TL and are asking me for resets on the street now",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "People have escaped the TL and are asking me for resets on the street now",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-18T21:14:58.476Z"
+    },
     {
       "version": "39697103a29962d0c82d2cdfeaaf3f169356770f892850e6d9e558a2f17d57d7",
       "id": "2111492673890824348",
@@ -131,14 +159,16 @@
     "2111583927156760690": "a8bd68d5cb406c9d31c31480d73fdcdbe1fb6c4964c7d1f2c209198ee06db4fb",
     "2111687989328011357": "882386b897990d20e3ff22181637a13aa8b273552318504bfa4dce5004f2c6de",
     "2111832959842161136": "9fb2b75f1050510272022d5802c4b077e29e189949faf137937f7998786e2310",
-    "2111849858374177222": "08a4c29a8b6f58c56bfe084be81b128ca6957337bb8cb4d4207eb4ca4062c74a"
+    "2111849858374177222": "08a4c29a8b6f58c56bfe084be81b128ca6957337bb8cb4d4207eb4ca4062c74a",
+    "2111918635849801739": "5de74bed76286972541eb1f7676ead6096a46e1d22532eb68658d32ba0a38edc",
+    "2111918768733753664": "f7a9422b6a050344dbc8758d9fc575a4cb52ebca200291e6ef9bbe222fe2119d"
   },
   "latestObservedPost": {
-    "id": "2111849858374177222",
-    "canonicalId": "2111849858374177222",
-    "text": "What’s cooking today",
-    "createdAt": "2026-10-18T16:00:17.000Z",
-    "url": "https://x.com/thsottiaux/status/2111849858374177222",
+    "id": "2111918768733753664",
+    "canonicalId": "2111918768733753664",
+    "text": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
+    "createdAt": "2026-10-18T20:34:06.000Z",
+    "url": "https://x.com/thsottiaux/status/2111918768733753664",
     "media": []
   },
   "eventParserVersion": 5
