@@ -1,57 +1,68 @@
-# ntfy Codex reset watcher
+# ntfy reset mention watcher
 
-Independent of the upstream monitor, CI, and Pages workflows. Polls
-https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml
-every five minutes at minutes 3, 8, ..., 58.
-Only category `reset` is delivered; `bank_credit` is excluded. This watches public
-announcements, not your individual account quota or reset timer.
+Every five minutes (minutes 3, 8, ..., 58), the watcher reads this repository's
+`monitor-state/state.json` at
+https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/state.json.
+It reads `matches` for @thsottiaux and sends any post whose original text contains
+`reset`, case-insensitively, including `mention` / `uncertain` classifications.
+RSS categories and event confirmation do not control ntfy notifications.
 
-## Enable
+The title is **Tibo mentioned reset**. The body includes the original post text
+and its canonical X link. A mention does not confirm that a reset happened.
+The existing X/FxEmbed monitor and RSS generation are unchanged.
 
-1. Repository Settings > Secrets and variables > Actions > New repository secret:
-   name `NTFY_TOPIC`, value your existing topic name only. Never commit the value.
-2. Actions > enable workflows if the fork shows an enable banner.
-3. Actions > Ntfy Codex reset watcher > Run workflow, leave test unchecked.
-   The first successful run saves a baseline without sending old events.
-4. Optionally run again with `test_notification` checked for one labeled phone
-   test. A test does not initialize or modify the baseline.
+## Enable and test
 
-The workflow requests contents write permission. If repository policy or branch
-protection rejects state updates, allow this workflow to update the default
-branch, or adapt the storage destination; do not bypass organization rules.
+1. Run **Monitor X for reset** to collect posts into the isolated `monitor-state`
+   branch, if needed. Existing runtime state is never overwritten.
+2. Keep the existing Actions secret `NTFY_TOPIC` (topic name only, never a URL).
+3. Run **Ntfy Codex reset watcher** with `test_notification` unchecked. The first
+   successful run establishes a silent baseline, including when migrating an
+   existing RSS watcher. Historical posts, including October 15 and 17 mentions,
+   are not sent. Any historical backfill requires separate explicit approval.
+4. Run with `test_notification` checked to send one notification with **TEST:**
+   in its title and **TEST ONLY** in its body. This does not read or modify
+   watcher state. Logs include the ntfy acknowledgment message ID, never the topic.
 
-## Persistence and recovery
+The existing schedule, `contents: write` permission, and workflow concurrency
+remain in place. GitHub schedules can be delayed or disabled; check Actions if
+notifications stop. The schedule is not a delivery-time guarantee.
 
-`.ntfy-watcher-state.json` on the default branch stores GUIDs and statuses only,
-never the topic. State is retained indefinitely, avoiding cache eviction and
-artifact expiry. Commits happen only on initialization or new events. Each
-update uses the current blob SHA, so conflicting updates fail safely. Workflow
-concurrency serializes scheduled and manual runs. GITHUB_TOKEN state commits do
-not recursively trigger push workflows.
+## Persistence and migration
+
+`.ntfy-watcher-state.json` on the default branch retains its version 1 format
+and every existing `events` record. The one-time `rule: reset-mentions-v1`
+migration adds post-ID aliases for legacy `postID:eventType` GUIDs, baselines
+all currently matching posts, and records `baselineAt`. Posts created at or
+before that time are also silently baselined if they appear in a later poll.
+Newer posts are deduplicated by X post ID, regardless of text edits, duplicate
+matches, or changed classifications. IDs are retained indefinitely.
 
 A durable `claimed` checkpoint is saved BEFORE publishing and `sent` afterward.
-This favors avoiding duplicate notifications. ntfy and GitHub cannot share a
-transaction: a crash or ambiguous HTTP outcome can leave an uncertain delivery.
-The next run fails visibly rather than automatically replaying or silently
-skipping it. Check the phone/ntfy history for that event, then edit the state
-file in GitHub: set that GUID to `sent` if received, or remove only that GUID to
-retry if certain it was not received. Removing a GUID may duplicate a message
-if it actually arrived. Do not delete the entire state file: that establishes
-a fresh silent baseline. Network/XML failures never overwrite state. A failed
-baseline save never sends notifications. Old GUIDs are never pruned.
+ntfy must acknowledge a message ID before the watcher saves `sent`. GitHub and
+ntfy cannot share a transaction, so an ambiguous delivery or failed final save
+can leave `claimed`. The next run fails visibly to avoid duplicate delivery,
+including during migration. Inspect ntfy history before setting the relevant
+record to `sent`, or removing it to retry only when delivery did not occur.
+Do not delete the whole state file: that creates a new silent baseline.
 
-## Limits and checks
+Each save uses the current GitHub blob SHA to fail safely on concurrent changes.
+Invalid JSON, invalid saved checkpoints, or source/network failures do not reset
+the baseline. A failed checkpoint save never publishes. The watcher does not
+store the ntfy topic. `GITHUB_TOKEN` state commits do not trigger push workflows.
+Repository policy must permit the workflow to update the default branch.
 
-GitHub schedules can be delayed or dropped and public repositories' scheduled
-workflows can be disabled after 60 days without repository activity. Check
-Actions if notifications stop; re-enable the workflow if needed. A five-minute
-cron is not a delivery-time guarantee. Events that disappear from the feed
-between successful polls cannot be recovered by this watcher.
+Posts that never appear in the monitor's retained `matches` cannot be recovered
+by the watcher. Receiving an ntfy acknowledgment verifies server acceptance;
+phone delivery still depends on the subscribed client and its connectivity.
 
-No external Python packages are required. Local checks:
+## Local checks
+
+No external Python packages are required:
 
 ```sh
-python -m py_compile scripts/ntfy-watch.py
 python -m unittest discover -s tests -p 'ntfy_watch_test.py'
-actionlint .github/workflows/ntfy-watch.yml
+python -m unittest discover -s ntfy-watcher/tests -p 'ntfy_watch_test.py'
 ```
+
+The standalone `ntfy-watcher/` copy is kept in sync with the root watcher.

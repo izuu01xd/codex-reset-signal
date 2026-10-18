@@ -1,16 +1,16 @@
 import base64
+from datetime import datetime, timezone
 import json
 import os
 import re
 import sys
 import urllib.error
 import urllib.request
-import xml.etree.ElementTree as ET
 
 
-FEED = "https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/feed.xml"
+SOURCE = "https://raw.githubusercontent.com/izuu01xd/codex-reset-signal/monitor-state/state.json"
 STATE_PATH = ".ntfy-watcher-state.json"
-
+RULE = "reset-mentions-v1"
 
 def request(url, data=None, headers=None, method=None):
     with urllib.request.urlopen(
@@ -20,22 +20,30 @@ def request(url, data=None, headers=None, method=None):
         return response.read()
 
 
-def parse_feed(data):
-    root = ET.fromstring(data)
-    if root.tag != "rss" or root.find("channel") is None:
-        raise ValueError("Expected an RSS channel")
+def timestamp(value):
+    result = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if result.tzinfo is None:
+        raise ValueError("Expected a timezone-aware timestamp")
+    return result
+
+
+def parse_matches(data):
+    source = json.loads(data)
+    if source.get("username") != "thsottiaux" or not isinstance(source.get("matches"), list):
+        raise ValueError("Expected @thsottiaux monitor matches")
     events = {}
-    for item in root.findall("./channel/item"):
-        if item.findtext("category") != "reset":
+    for post in source["matches"]:
+        text = post["text"]
+        if "reset" not in text.casefold():
             continue
-        identity = (item.findtext("guid") or "").strip()
-        link = (item.findtext("link") or "").strip()
-        if not identity or not link.startswith("https://"):
-            raise ValueError("Reset event requires a GUID and HTTPS link")
+        identity = post["id"]
+        if not isinstance(identity, str) or not re.fullmatch(r"[0-9]+", identity):
+            raise ValueError("Reset mention requires a numeric post ID")
+        timestamp(post["createdAt"])
         events[identity] = {
-            "title": item.findtext("title") or "Codex reset",
-            "link": link,
-            "description": item.findtext("description") or "",
+            "link": "https://x.com/thsottiaux/status/" + identity,
+            "description": text,
+            "createdAt": post["createdAt"],
         }
     return events
 
@@ -69,6 +77,10 @@ class Store:
             raise ValueError("Invalid saved state; refusing to reset baseline")
         if any(value not in ("baseline", "claimed", "sent") for value in state["events"].values()):
             raise ValueError("Invalid event status")
+        if "rule" in state:
+            if state["rule"] != RULE:
+                raise ValueError("Unknown watcher rule; refusing to reset baseline")
+            timestamp(state["baselineAt"])
         return state
 
     def save(self, state):
@@ -83,34 +95,55 @@ class Store:
         self.sha = result["content"]["sha"]
 
 
-def watch(events, store, publish):
+def watch(events, store, publish, now=None):
     state = store.load()
     if state is None:
-        store.save({"version": 1, "events": dict.fromkeys(events, "baseline")})
-        print("Baseline saved; no old notifications sent.")
-        return
+        state = {"version": 1, "events": {}}
     if "claimed" in state["events"].values():
         raise RuntimeError("Uncertain delivery checkpoint: inspect state and ntfy before recovery")
+    if state.get("rule") != RULE:
+        # Retain all legacy GUID checkpoints and add post-ID aliases. A parser
+        # reclassification or text edit must never replay an already seen post.
+        for identity, status in list(state["events"].items()):
+            post_id = identity.split(":", 1)[0]
+            if re.fullmatch(r"[0-9]+", post_id):
+                state["events"].setdefault(post_id, status)
+        for identity in events:
+            state["events"].setdefault(identity, "baseline")
+        state["rule"] = RULE
+        state["baselineAt"] = (now or datetime.now(timezone.utc)).isoformat()
+        store.save(state)
+        print("Reset mention baseline saved; no historical notifications sent.")
+        return
     for identity, event in reversed(list(events.items())):
         if identity in state["events"]:
+            continue
+        # Older posts can reappear in matches after a monitor/parser refresh.
+        if timestamp(event["createdAt"]) <= timestamp(state["baselineAt"]):
+            state["events"][identity] = "baseline"
+            store.save(state)
             continue
         state["events"][identity] = "claimed"
         store.save(state)
         publish(event)
         state["events"][identity] = "sent"
         store.save(state)
-        print("New reset notification delivered and checkpointed.")
+        print("New reset mention notification delivered and checkpointed.")
 
 
-def publish(event, topic):
-    body = event["title"] + "\n\n" + event["description"] + "\n\n" + event["link"]
-    request("https://ntfy.sh/" + topic, body.encode(), {
-        "Title": "Codex reset detected",
+def publish(event, topic, test=False):
+    title = "TEST: Tibo reset watcher" if test else "Tibo mentioned reset"
+    body = event["description"] + "\n\n" + event["link"]
+    response = json.loads(request("https://ntfy.sh/" + topic, body.encode(), {
+        "Title": title,
         "Priority": "high",
         "Tags": "arrows_counterclockwise,robot",
         "Click": event["link"],
         "Content-Type": "text/plain; charset=utf-8",
-    })
+    }))
+    if response.get("event") != "message" or not response.get("id"):
+        raise ValueError("ntfy did not acknowledge the notification")
+    print("ntfy accepted message ID: " + response["id"])
 
 
 def main():
@@ -118,11 +151,11 @@ def main():
     if not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", topic):
         raise ValueError("Set NTFY_TOPIC to a valid topic name (not a URL)")
     if os.environ.get("TEST_NOTIFICATION") == "true":
-        publish({"title": "TEST: Codex watcher connection", "description": "Manual test; watcher state unchanged.", "link": FEED}, topic)
+        publish({"description": "TEST ONLY: GitHub Actions to ntfy connection test. This is not a reset announcement. Watcher state unchanged.", "link": SOURCE}, topic, test=True)
         print("Test notification sent; state unchanged.")
         return
-    events = parse_feed(request(FEED))
-    print("Read " + str(len(events)) + " reset GUIDs from repository feed.")
+    events = parse_matches(request(SOURCE))
+    print("Read " + str(len(events)) + " reset mentions from monitor-state/state.json.")
     watch(events, Store(), lambda event: publish(event, topic))
 
 
