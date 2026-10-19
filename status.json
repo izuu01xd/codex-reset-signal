@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T01:25:31.897Z",
+  "updatedAt": "2026-10-19T06:34:33.858Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-19T01:25:31.894Z",
-    "lastSuccessAt": "2026-10-19T01:25:31.894Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-10-19T06:34:33.788Z",
+    "lastSuccessAt": "2026-10-19T06:34:33.788Z",
+    "lastRunStatus": "checked-7-posts"
   },
   "latestObservedPost": {
-    "id": "2111990254408434095",
-    "text": "Day 14/\n\nSmall quality of life improvement. You can now edit previous messages within a thread in the desktop app. Long time requested, and took way too long to get that one out.",
-    "url": "https://x.com/thsottiaux/status/2111990254408434095",
-    "postCreatedAt": "2026-10-19T01:18:10.000Z"
+    "id": "2112049026636103954",
+    "text": "@jxnlco Didn’t know Batman worked at OpenAI",
+    "url": "https://x.com/thsottiaux/status/2112049026636103954",
+    "postCreatedAt": "2026-10-19T05:11:42.000Z"
   },
   "latest": {
     "reset": null,
