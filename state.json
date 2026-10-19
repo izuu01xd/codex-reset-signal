@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2111945355596353823",
-  "lastCheckedAt": "2026-10-18T23:20:25.767Z",
-  "lastSuccessAt": "2026-10-18T23:20:25.767Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 53,
+  "sinceId": "2111990254408434095",
+  "lastCheckedAt": "2026-10-19T01:25:31.894Z",
+  "lastSuccessAt": "2026-10-19T01:25:31.894Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 54,
   "matches": [
     {
       "version": "f7a9422b6a050344dbc8758d9fc575a4cb52ebca200291e6ef9bbe222fe2119d",
@@ -162,14 +162,15 @@
     "2111918635849801739": "5de74bed76286972541eb1f7676ead6096a46e1d22532eb68658d32ba0a38edc",
     "2111918768733753664": "f7a9422b6a050344dbc8758d9fc575a4cb52ebca200291e6ef9bbe222fe2119d",
     "2111941223187710114": "d1bbc0514b67356130f56873fa86a15e6579491fdb15c2e8225345ea0cb241d5",
-    "2111945355596353823": "9b603d79c383a25419d6c14b3bfcb15a90a2f99dc3f12489f042f4055f77fea4"
+    "2111945355596353823": "9b603d79c383a25419d6c14b3bfcb15a90a2f99dc3f12489f042f4055f77fea4",
+    "2111990254408434095": "2e052ebf59ee204716c6915da8de50f8f379da529dcfb8e6272f7841619941bb"
   },
   "latestObservedPost": {
-    "id": "2111945355596353823",
-    "canonicalId": "2111945355596353823",
-    "text": "@theo Journalism with additional Theo steps",
-    "createdAt": "2026-10-18T22:19:45.000Z",
-    "url": "https://x.com/thsottiaux/status/2111945355596353823",
+    "id": "2111990254408434095",
+    "canonicalId": "2111990254408434095",
+    "text": "Day 14/\n\nSmall quality of life improvement. You can now edit previous messages within a thread in the desktop app. Long time requested, and took way too long to get that one out.",
+    "createdAt": "2026-10-19T01:18:10.000Z",
+    "url": "https://x.com/thsottiaux/status/2111990254408434095",
     "media": []
   },
   "eventParserVersion": 5
