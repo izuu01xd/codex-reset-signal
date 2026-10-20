@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2112432076767289678",
-  "lastCheckedAt": "2026-10-20T06:42:39.821Z",
-  "lastSuccessAt": "2026-10-20T06:42:39.821Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-10-20T12:15:57.219Z",
+  "lastSuccessAt": "2026-10-20T12:15:57.219Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 64,
   "matches": [
     {
       "version": "4d9af2b3bec9bb61cf8d47e37ee68ba3439228225d37ef8a38314cc8826cac0b",
       "id": "2112432076767289678",
-      "canonicalId": "2112432076767289678",
       "text": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy.",
       "createdAt": "2026-10-20T06:33:48.000Z",
       "url": "https://x.com/thsottiaux/status/2112432076767289678",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-20T06:42:39.823Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-20T06:42:39.823Z"
+      ]
     },
     {
       "version": "f7a9422b6a050344dbc8758d9fc575a4cb52ebca200291e6ef9bbe222fe2119d",
