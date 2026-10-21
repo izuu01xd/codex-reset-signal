@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2112712984644784534",
-  "lastCheckedAt": "2026-10-21T06:48:59.638Z",
-  "lastSuccessAt": "2026-10-21T06:48:59.638Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 66,
+  "sinceId": "2112798407928713717",
+  "lastCheckedAt": "2026-10-21T12:29:25.475Z",
+  "lastSuccessAt": "2026-10-21T12:29:25.475Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 67,
   "matches": [
+    {
+      "version": "ed5d41aa8bfe4c73cc891ac09420b29bbe0115dd803c2ce9430be134be21cf44",
+      "id": "2112798407928713717",
+      "canonicalId": "2112798407928713717",
+      "text": "@theo I demand a reset",
+      "createdAt": "2026-10-21T06:49:29.000Z",
+      "url": "https://x.com/thsottiaux/status/2112798407928713717",
+      "media": [],
+      "detectedAt": "2026-10-21T12:29:25.474Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "@theo I demand a reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "@theo I demand a reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-21T12:29:25.477Z"
+    },
     {
       "version": "4d9af2b3bec9bb61cf8d47e37ee68ba3439228225d37ef8a38314cc8826cac0b",
       "id": "2112432076767289678",
@@ -202,14 +230,15 @@
     "2112426606870585551": "d09f4ebf49f91217eb4373f658179ae2ac17da1fb929edfb2f59aa7dd46bf136",
     "2112432076767289678": "4d9af2b3bec9bb61cf8d47e37ee68ba3439228225d37ef8a38314cc8826cac0b",
     "2112592264686149749": "4d0758138da1a41962f2763f95f8e233606ca8df66c7214543ce330fd87bb55a",
-    "2112712984644784534": "f9199e8badb9a717dc59cd50f4202483af414fba15eb6bc94027bb5920f3a3c7"
+    "2112712984644784534": "f9199e8badb9a717dc59cd50f4202483af414fba15eb6bc94027bb5920f3a3c7",
+    "2112798407928713717": "ed5d41aa8bfe4c73cc891ac09420b29bbe0115dd803c2ce9430be134be21cf44"
   },
   "latestObservedPost": {
-    "id": "2112712984644784534",
-    "canonicalId": "2112712984644784534",
-    "text": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex &amp; Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache.",
-    "createdAt": "2026-10-21T01:10:02.000Z",
-    "url": "https://x.com/thsottiaux/status/2112712984644784534",
+    "id": "2112798407928713717",
+    "canonicalId": "2112798407928713717",
+    "text": "@theo I demand a reset",
+    "createdAt": "2026-10-21T06:49:29.000Z",
+    "url": "https://x.com/thsottiaux/status/2112798407928713717",
     "media": []
   },
   "eventParserVersion": 5
