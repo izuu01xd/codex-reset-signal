@@ -1,0 +1,51 @@
+name: Bambu Lab Black Friday 2026 ntfy reminder
+
+on:
+  schedule:
+    # 2026-10-27 12:03 UTC = 2026-10-27 20:03 Asia/Taipei
+    - cron: '3 12 27 10 *'
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Notify Bambu Lab Black Friday via existing ntfy topic
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          from datetime import datetime, timezone
+          from urllib.request import Request, urlopen
+
+          # Avoid sending this annual cron next year.
+          if datetime.now(timezone.utc).strftime("%Y-%m-%d") != "2026-10-27":
+              print("Not the 2026 sale date.")
+              raise SystemExit(0)
+
+          topic = os.environ.get("NTFY_TOPIC", "")
+          if not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", topic):
+              raise ValueError("Missing or invalid NTFY_TOPIC secret")
+
+          url = "https://store.bambulab.com/"
+          body = ("拓竹 Bambu Lab 2026 黑五已經開始啦！\n"
+                  "公告開始時間：台灣 10/27 20:00。\n"
+                  "記得比較台灣通路的實際售價，與我們想買的機型！\n" + url)
+          req = Request("https://ntfy.sh/" + topic, data=body.encode("utf-8"),
+                        headers={"Title":"Bambu Lab Black Friday 2026 starts!",
+                                 "Priority":"high","Tags":"tada,shopping_cart",
+                                 "Click":url,"Content-Type":"text/plain; charset=utf-8"},
+                        method="POST")
+          with urlopen(req, timeout=30) as response:
+              receipt = json.load(response)
+          if receipt.get("event") != "message" or not receipt.get("id"):
+              raise RuntimeError("ntfy did not acknowledge reminder")
+          print("ntfy accepted reminder:", receipt["id"])
+          PY
