@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2113163458867032238",
-  "lastCheckedAt": "2026-10-22T07:46:19.143Z",
-  "lastSuccessAt": "2026-10-22T07:46:19.143Z",
-  "lastRunStatus": "checked-3-posts",
+  "lastCheckedAt": "2026-10-22T13:13:49.759Z",
+  "lastSuccessAt": "2026-10-22T13:13:49.759Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 75,
   "matches": [
     {
       "version": "2417cdb9e6c0e6c4846af3702c3c24fb721ec4961912d951745e526999497bd1",
       "id": "2113162277688070445",
-      "canonicalId": "2113162277688070445",
       "text": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.",
       "createdAt": "2026-10-22T06:55:22.000Z",
       "url": "https://x.com/thsottiaux/status/2113162277688070445",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-22T07:46:19.146Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-22T07:46:19.146Z"
+      ]
     },
     {
       "version": "ed5d41aa8bfe4c73cc891ac09420b29bbe0115dd803c2ce9430be134be21cf44",
