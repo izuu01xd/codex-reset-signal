@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2113163458867032238",
-  "lastCheckedAt": "2026-10-22T21:29:09.964Z",
-  "lastSuccessAt": "2026-10-22T21:29:09.964Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 75,
+  "sinceId": "2113404560853397516",
+  "lastCheckedAt": "2026-10-23T00:06:44.726Z",
+  "lastSuccessAt": "2026-10-23T00:06:44.726Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 76,
   "matches": [
     {
       "version": "2417cdb9e6c0e6c4846af3702c3c24fb721ec4961912d951745e526999497bd1",
@@ -265,14 +265,15 @@
     "2113029854417600834": "aba33bf5cb01b6a46bb2f81e773c232b66ad312fa85ba7cca6c35cb8d3c96f3f",
     "2113162277688070445": "2417cdb9e6c0e6c4846af3702c3c24fb721ec4961912d951745e526999497bd1",
     "2113162413008884099": "ac64cd14b4916c4387ab7d448ee3cf68d4dfc40b38cb3dadd3fdc913cee1a98d",
-    "2113163458867032238": "b96faa0c618f38a1fec25fa5c7efd622263ccda78f6e9099c58c31b069753100"
+    "2113163458867032238": "b96faa0c618f38a1fec25fa5c7efd622263ccda78f6e9099c58c31b069753100",
+    "2113404560853397516": "094234bf77531732137280e460e1c03f684109c0a3d3a396593febeaa13af781"
   },
   "latestObservedPost": {
-    "id": "2113163458867032238",
-    "canonicalId": "2113163458867032238",
-    "text": "@ebloch Hefty",
-    "createdAt": "2026-10-22T07:00:03.000Z",
-    "url": "https://x.com/thsottiaux/status/2113163458867032238",
+    "id": "2113404560853397516",
+    "canonicalId": "2113404560853397516",
+    "text": "@romainhuet Very baguette of you",
+    "createdAt": "2026-10-22T22:58:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2113404560853397516",
     "media": []
   },
   "eventParserVersion": 5
