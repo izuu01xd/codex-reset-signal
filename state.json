@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2113492502355562875",
-  "lastCheckedAt": "2026-10-23T09:37:01.792Z",
-  "lastSuccessAt": "2026-10-23T09:37:01.792Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-10-23T14:26:16.873Z",
+  "lastSuccessAt": "2026-10-23T14:26:16.873Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 78,
   "matches": [
     {
       "version": "84e83973968a4c109d3e23f1603ecf6dbb16af8820693e625bd2006eebeccbfb",
       "id": "2113492187770175603",
-      "canonicalId": "2113492187770175603",
       "text": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex &amp; work. But yes… that’s a reset!",
       "createdAt": "2026-10-23T04:46:19.000Z",
       "url": "https://x.com/thsottiaux/status/2113492187770175603",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-23T09:37:01.797Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-23T09:37:01.797Z"
+      ]
     },
     {
       "version": "2417cdb9e6c0e6c4846af3702c3c24fb721ec4961912d951745e526999497bd1",
