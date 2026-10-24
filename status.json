@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T13:16:13.521Z",
+  "updatedAt": "2026-10-24T16:42:28.676Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-24T13:16:13.518Z",
-    "lastSuccessAt": "2026-10-24T13:16:13.518Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-24T16:42:28.672Z",
+    "lastSuccessAt": "2026-10-24T16:42:28.672Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2113838156193894447",
-    "text": "The difference between having a tool and being a tool is subtle these days and it’s easy to accidentally build yourself into being a tool. Don’t be a tool.",
-    "url": "https://x.com/thsottiaux/status/2113838156193894447",
-    "postCreatedAt": "2026-10-24T03:41:04.000Z"
+    "id": "2114030784625647855",
+    "text": "Saturday is for fixing bugs while sipping coffee. What are some great places to hangout in SF?",
+    "url": "https://x.com/thsottiaux/status/2114030784625647855",
+    "postCreatedAt": "2026-10-24T16:26:30.000Z"
   },
   "latest": {
     "reset": null,
