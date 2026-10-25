@@ -3,12 +3,68 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2114125878804545940",
-  "lastCheckedAt": "2026-10-25T01:40:13.543Z",
-  "lastSuccessAt": "2026-10-25T01:40:13.543Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 90,
+  "sinceId": "2114237441250828563",
+  "lastCheckedAt": "2026-10-25T06:53:51.207Z",
+  "lastSuccessAt": "2026-10-25T06:53:51.207Z",
+  "lastRunStatus": "checked-7-posts",
+  "postsScanned": 97,
   "matches": [
+    {
+      "version": "b9d449b7729cd88e67ea3d4e502de24abc9b87cbe3e939a8b0ef8c3126c5ce58",
+      "id": "2114228044072403055",
+      "canonicalId": "2114228044072403055",
+      "text": "@theo Not a real improvement, put the reset in the bag",
+      "createdAt": "2026-10-25T05:30:20.000Z",
+      "url": "https://x.com/thsottiaux/status/2114228044072403055",
+      "media": [],
+      "detectedAt": "2026-10-25T06:53:51.207Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "@theo Not a real improvement, put the reset in the bag",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "@theo Not a real improvement, put the reset in the bag",
+            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-25T06:53:51.215Z"
+    },
+    {
+      "version": "72f6ac530cb6d09cb0c957d3535c8768295542be3bfd44f88d1ecb0c18a872b4",
+      "id": "2114200152701575656",
+      "canonicalId": "2114200152701575656",
+      "text": "Day 20/ Rest and reset",
+      "createdAt": "2026-10-25T03:39:31.000Z",
+      "url": "https://x.com/thsottiaux/status/2114200152701575656",
+      "media": [],
+      "detectedAt": "2026-10-25T06:53:51.207Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Day 20/ Rest and reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Day 20/ Rest and reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-25T06:53:51.211Z"
+    },
     {
       "version": "84e83973968a4c109d3e23f1603ecf6dbb16af8820693e625bd2006eebeccbfb",
       "id": "2113492187770175603",
@@ -307,14 +363,21 @@
     "2114074885622501706": "5521d1024877be88cfb239eae896fb336b880e5126613718f3feff18284f5578",
     "2114086171907428846": "a342bb3b47c16b6ad528fcf765f7380babfc6ab3dcbf0d78adcb2b7dc5bf0fb8",
     "2114125293124542632": "4b6e06913bca8be3b5cd30c5fcda1375c778886723d43936f116a16df1adff74",
-    "2114125878804545940": "1f762be636e3eb7e8159aabb200fd144b41700aa9c5193897142231b4f4201ec"
+    "2114125878804545940": "1f762be636e3eb7e8159aabb200fd144b41700aa9c5193897142231b4f4201ec",
+    "2114199013176303641": "24ef83efe450d7b02ff9457cd244c707b5e90fcfc1ca7704c8f57f0a897dc902",
+    "2114200152701575656": "72f6ac530cb6d09cb0c957d3535c8768295542be3bfd44f88d1ecb0c18a872b4",
+    "2114200291319124163": "b8775d91a923e8d235a471cd4053c3cbb1e73ff22575f20b235b4e8d4ab61e2d",
+    "2114228044072403055": "b9d449b7729cd88e67ea3d4e502de24abc9b87cbe3e939a8b0ef8c3126c5ce58",
+    "2114228445043691592": "8dbf1139cc31522a4bec626bbb697beabd39584ef74f629e5728244acbf21f04",
+    "2114237083652882932": "e11088d05c6a6731b59c54c04e644b84ed599490b9fb9f3cac2646c3d90cffda",
+    "2114237441250828563": "95be22ce3395bad7c6df058728aa637d32831bf0793a0d3183ef566afb807461"
   },
   "latestObservedPost": {
-    "id": "2114125878804545940",
-    "canonicalId": "2114125878804545940",
-    "text": "@mitsuhiko I doubt they are on twitter",
-    "createdAt": "2026-10-24T22:44:22.000Z",
-    "url": "https://x.com/thsottiaux/status/2114125878804545940",
+    "id": "2114237441250828563",
+    "canonicalId": "2114237441250828563",
+    "text": "@ScriptedAlchemy .com",
+    "createdAt": "2026-10-25T06:07:41.000Z",
+    "url": "https://x.com/thsottiaux/status/2114237441250828563",
     "media": []
   },
   "eventParserVersion": 5
