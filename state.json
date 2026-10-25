@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2114237441250828563",
-  "lastCheckedAt": "2026-10-25T06:53:51.207Z",
-  "lastSuccessAt": "2026-10-25T06:53:51.207Z",
-  "lastRunStatus": "checked-7-posts",
+  "lastCheckedAt": "2026-10-25T12:18:09.567Z",
+  "lastSuccessAt": "2026-10-25T12:18:09.567Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 97,
   "matches": [
     {
       "version": "b9d449b7729cd88e67ea3d4e502de24abc9b87cbe3e939a8b0ef8c3126c5ce58",
       "id": "2114228044072403055",
-      "canonicalId": "2114228044072403055",
       "text": "@theo Not a real improvement, put the reset in the bag",
       "createdAt": "2026-10-25T05:30:20.000Z",
       "url": "https://x.com/thsottiaux/status/2114228044072403055",
@@ -32,15 +31,14 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-25T06:53:51.215Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-25T06:53:51.215Z"
+      ]
     },
     {
       "version": "72f6ac530cb6d09cb0c957d3535c8768295542be3bfd44f88d1ecb0c18a872b4",
       "id": "2114200152701575656",
-      "canonicalId": "2114200152701575656",
       "text": "Day 20/ Rest and reset",
       "createdAt": "2026-10-25T03:39:31.000Z",
       "url": "https://x.com/thsottiaux/status/2114200152701575656",
@@ -60,10 +58,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-25T06:53:51.211Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-25T06:53:51.211Z"
+      ]
     },
     {
       "version": "84e83973968a4c109d3e23f1603ecf6dbb16af8820693e625bd2006eebeccbfb",
