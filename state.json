@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2115330127886463244",
-  "lastCheckedAt": "2026-10-28T08:42:46.584Z",
-  "lastSuccessAt": "2026-10-28T08:42:46.584Z",
-  "lastRunStatus": "checked-10-posts",
+  "lastCheckedAt": "2026-10-28T15:29:09.611Z",
+  "lastSuccessAt": "2026-10-28T15:29:09.611Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 120,
   "matches": [
     {
       "version": "81aa0416a461f3aedd751e42cca996b60e3af36c5e8c7e391f5ef7d01ce6ef61",
       "id": "2115273064481218829",
-      "canonicalId": "2115273064481218829",
       "text": "Day 23/ Much requested iCloud Main &amp; Calendar plugins. Just kidding, today is a reset. Still much requested though!",
       "createdAt": "2026-10-28T02:42:53.000Z",
       "url": "https://x.com/thsottiaux/status/2115273064481218829",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-28T08:42:46.587Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-28T08:42:46.587Z"
+      ]
     },
     {
       "version": "0ed9171ef1a5ce3545afbab8a929e6404915691424944a6d484536d78e66c1e3",
