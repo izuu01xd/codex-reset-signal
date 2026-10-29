@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T12:51:24.445Z",
+  "updatedAt": "2026-10-29T18:42:51.117Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-29T12:51:24.440Z",
-    "lastSuccessAt": "2026-10-29T12:51:24.440Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-29T18:42:51.109Z",
+    "lastSuccessAt": "2026-10-29T18:42:51.109Z",
+    "lastRunStatus": "checked-5-posts"
   },
   "latestObservedPost": {
-    "id": "2115649073302904875",
-    "text": "@rezoundous Low, but not zero",
-    "url": "https://x.com/thsottiaux/status/2115649073302904875",
-    "postCreatedAt": "2026-10-29T03:37:00.000Z"
+    "id": "2115851811576053881",
+    "text": "@StefanoGPT Yes",
+    "url": "https://x.com/thsottiaux/status/2115851811576053881",
+    "postCreatedAt": "2026-10-29T17:02:37.000Z"
   },
   "latest": {
     "reset": null,
@@ -44,6 +44,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "41e2cbc827fd7f3e134d57e3399dca1567f6cd5a1510eb3e471d695bbe32949f",
+      "id": "2115851621137784832",
+      "text": "Graduating from The Reset Company to The Token Company.",
+      "url": "https://x.com/thsottiaux/status/2115851621137784832",
+      "postCreatedAt": "2026-10-29T17:01:51.000Z",
+      "detectedAt": "2026-10-29T18:42:51.109Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Graduating from The Reset Company to The Token Company",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Graduating from The Reset Company to The Token Company",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "81aa0416a461f3aedd751e42cca996b60e3af36c5e8c7e391f5ef7d01ce6ef61",
       "id": "2115273064481218829",
